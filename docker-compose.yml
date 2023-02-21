@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+  postgres_database:
+    image: postgres:lastest
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=finaxis
+    ports:
+      - '5432:5432'
